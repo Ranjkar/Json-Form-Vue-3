@@ -1,0 +1,113 @@
+div.wrapper:has(.input[type="checkbox"]) {
+  /* Your custom styles for the wrapper with checkbox input here */
+  /* Example styles */
+ display: block !important;
+}
+
+h1 {
+color: #343b6c !important;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.control > .error, .control > .description {
+  min-height: 1%;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 50px;
+  height: 28px;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  background: #E5E7EB;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10%;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background 300ms linear;
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 4px;
+  border-radius: 10%;
+  background-color: #f7f7fa;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: left 300ms linear;
+}
+
+input[type="checkbox"]:checked {
+  background: #3492eb;
+}
+
+input[type="checkbox"]:checked::before {
+  left: 26px;
+  background-color: #f7f7fa;
+}
+
+
+.label {
+  font-weight: 600;
+  font-size: small;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #343b6c !important;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.group-label {
+  font-weight: bold;
+  font-size: medium;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #f1ad00 !important;
+  padding-left: 5px;
+
+}
+.group {
+  color: #3492eb;
+  margin-block: 5px;
+  border-color: #343b6c;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  border-color: #343b6c;
+
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0066ff;
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border-color: #343b6c;
+}
+
+
+.select:focus {
+  outline: none;
+  border-color: #0066ff;
+}
+
+.myform {
+  max-width: 800px;
+  margin: auto;
+}
+.wrapper {
+  padding: 2px;
+}

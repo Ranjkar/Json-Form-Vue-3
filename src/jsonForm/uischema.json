@@ -1,0 +1,206 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+        {
+            "type": "Group",
+            "label": "Credentials",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DPD_DELISID"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/PASSWORD"
+                        }
+                    ]
+                },
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DPD_DELISID_TEST"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/PASSWORD_TEST"
+                        }
+                    ]
+                },
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DPD_SENDING_DEPOT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Group",
+            "label": "Preferences",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/USE_TEST"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Group",
+            "label": "References",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/MPS_CUSTOMER_REFERENCE2"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/MPS_CUSTOMER_REFERENCE3"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/MPS_CUSTOMER_REFERENCE4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Group",
+            "label": "Label settings",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/LABELEXTENSION"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Group",
+            "label": "Shipment profile settings",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DESCRIPTION_DEFAULT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Group",
+            "label": "Dutiable settings",
+            "description": "Only use this when you are shipping dutiable shipments.",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/INVOICE_NUMBER"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DPD_EXPORT_REASON"
+                        }
+                    ]
+                },
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DEFAULT_COMMINV_WEIGHT"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/COMMINV_USE_INTERNAL_PRICE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Group",
+            "label": "Dangerous goods settings",
+            "description": "Only use this when you are shipping dangerous goods shipments.",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DISABLE_LQ_LABEL_OUTBOUND"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DISABLE_LQ_LABEL_SERVICEPOINT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Group",
+            "label": "Pre advice settings",
+            "description": "Only use this when you would like to enable pre advice for your shipments.",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DPD_PREDICT_CHANNELS",
+                            "options": {
+                                "format": "radio"
+                            }
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/DPD_PARCELSHOP_CHANNELS"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Group",
+            "label": "Legacy settings",
+            "description": "Only use this when you ship via ShipitSmarter.",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/COMMINV_PRODUCT_SOURCE"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
