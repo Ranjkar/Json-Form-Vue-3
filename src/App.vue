@@ -2,14 +2,26 @@
  
   <div class="myform">
      <h1>JSON Forms Vue 3</h1>
-    <json-forms
-      :data="data"
-      :renderers="renderers"
-      :schema="schema"
-      :uischema="uischema"
-      @change="onChange"
-    />
+       <JsonForms
+         :data="data"
+         :schema="schema"
+         :uischema="uischema"
+         :renderers="renderers"
+         @change="onChange"
+       />
+       <button type="submit" class="SubmitBtn" @click.prevent="SubmitData">Submit</button>
   </div>
+
+  <div class="myform">
+    <h1>Submited Data</h1>
+    <div v-for="(data, index) in submitedData" :key="index">
+      <div>
+        <h3>Form Data {{index + 1}}</h3>
+        <pre>{{data}}</pre>
+      </div>
+    </div>
+  </div>
+  
 </template>
 
 <script>
@@ -32,16 +44,28 @@ export default defineComponent({
     JsonForms,
   },
   data() {
-    return {
-      // freeze renderers for performance gains
-      renderers: Object.freeze(renderers),
+    return { // declare variables
+      renderers: Object.freeze(renderers),   // freeze renderers for performance gains
       schema, // schema
       uischema, // layout
+      formData: {}, // form data
+      submitedData: []
     };
   },
   methods: {
     onChange(event) {
-      console.log(event);
+      if (event.data ===  undefined) { // if data is undefined return
+        return;
+      }
+      this.formData = event.data; // update form data
+    },
+    SubmitData() {
+      if (Object.keys(this.formData).length === 0) { // if form data is empty return
+        return;
+      }
+      console.log(this.formData);
+      this.submitedData.push(this.formData); // push form data to submitedData array
+      this.formData = {}; // reset form data
     },
   },
 });
