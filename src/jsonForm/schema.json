@@ -29,7 +29,7 @@
           "type": "boolean",
           "title": "Use test environment of DPD",
           "description": "Set to true if the test environment of DPD should be used, even from ShipitSmarter production.",
-          "default": false
+          "default": true
       },
       "MPS_CUSTOMER_REFERENCE2": {
           "oneOf": [
@@ -122,7 +122,7 @@
           "type": "boolean",
           "title": "Use internal price if provided",
           "description": "If set to Yes: if the shipment has shipment_comminv.INTERNAL_PRICE propulated: that is used for the lineItem value, else shipment_comminv.VALUE is used.",
-          "default": false
+          "default": true
       },
       "DPD_EXPORT_REASON": {
           "description": "Export Reason default, this is used if shipment_instruction.EXPORT_REASON_type is not set/cannot be translated.",
@@ -153,7 +153,7 @@
           "type": "boolean",
           "title": "Disable LQ labels for service point returns",
           "description": "Per default, the LQ titles are generated in case of LQ shipments. Use this parameter to disable this title",
-          "default": false
+          "default": true
       },
       "DPD_PREDICT_CHANNELS": {
           "description": "Predict channels to use",

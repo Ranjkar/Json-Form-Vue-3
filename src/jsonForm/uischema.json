@@ -51,7 +51,10 @@
                     "elements": [
                         {
                             "type": "Control",
-                            "scope": "#/properties/USE_TEST"
+                            "scope": "#/properties/USE_TEST",
+                            "options": {
+                                "renderer": "toggleButton"
+                                }
                         }
                     ]
                 }

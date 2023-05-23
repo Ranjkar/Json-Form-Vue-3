@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import toggleButton from './components/toggleButton.vue';
 import { defineComponent } from "vue";
 import { JsonForms } from "@jsonforms/vue"; // import JsonForms component
 import {
@@ -42,6 +43,7 @@ export default defineComponent({
   name: "App",
   components: {
     JsonForms,
+    toggleButton
   },
   data() {
     return { // declare variables
