@@ -25,17 +25,21 @@
 </template>
 
 <script>
-import toggleButton from './components/toggleButton.vue';
+import ToggleButtonRenderer from './components/ToggleButtonRenderer.vue';
 import { defineComponent } from "vue";
 import { JsonForms } from "@jsonforms/vue"; // import JsonForms component
 import {
   vanillaRenderers, // default renderers
 } from "@jsonforms/vue-vanilla";
+import { rankWith, isControl } from "@jsonforms/core"
 
 const renderers = [
   ...vanillaRenderers,
-  // here you can add custom renderers
-];
+  {
+    renderer: ToggleButtonRenderer,
+    tester: rankWith(1, isControl),
+  }
+]
 import schema from "./jsonForm/schema.json"; // import schema for the form
 import uischema from "./jsonForm/uischema.json" // import uischema its layout
 
@@ -43,7 +47,7 @@ export default defineComponent({
   name: "App",
   components: {
     JsonForms,
-    toggleButton
+    ToggleButtonRenderer
   },
   data() {
     return { // declare variables

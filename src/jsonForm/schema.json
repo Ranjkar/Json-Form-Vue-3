@@ -153,7 +153,7 @@
           "type": "boolean",
           "title": "Disable LQ labels for service point returns",
           "description": "Per default, the LQ titles are generated in case of LQ shipments. Use this parameter to disable this title",
-          "default": true
+          "default": false
       },
       "DPD_PREDICT_CHANNELS": {
           "description": "Predict channels to use",

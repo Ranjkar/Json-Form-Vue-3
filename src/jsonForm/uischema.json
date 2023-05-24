@@ -51,10 +51,17 @@
                     "elements": [
                         {
                             "type": "Control",
-                            "scope": "#/properties/USE_TEST",
+                            "scope": "#/properties/toggleProperty",
                             "options": {
-                                "renderer": "toggleButton"
+                                "type": "boolean",
+                                "renderers": [
+                                {
+                                    "renderer": "ToggleButtonRenderer",
+                                    "id": "myToggle",
+                                    "label": "Toggle Label"
                                 }
+                                ]
+                            }
                         }
                     ]
                 }
