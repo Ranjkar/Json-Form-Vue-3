@@ -13,45 +13,6 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   min-height: 1%;
 }
 
-input[type="checkbox"] {
-  display: block;
-  position: relative;
-  width: 50px;
-  height: 28px;
-  -webkit-appearance: none;
-  -webkit-appearance: none;
-  background: #b8babb;
-  outline: none;
-  cursor: pointer;
-  border-radius: 30px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  transition: background 300ms linear;
-}
-
-input[type="checkbox"]::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  top: 3px;
-  left: 4px;
-  border-radius: 20px;
-  background-color: #ffff;
-  transform: scale(1.1);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: left 300ms linear;
-}
-
-input[type="checkbox"]:checked {
-  background: #1686ef;
-}
-
-input[type="checkbox"]:checked::before {
-  left: 26px;
-  background-color: #ffff;
-}
-
-
 .label {
   font-weight: 600;
   font-size: small;

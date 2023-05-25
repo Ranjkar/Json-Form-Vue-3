@@ -1,7 +1,7 @@
 <template>
  
   <div class="myform">
-     <h1>JSON Forms Vue 3</h1>
+     <h1 class="text-3xl">JSON Forms Vue 3</h1>
        <JsonForms
          :data="data"
          :schema="schema"
@@ -26,17 +26,19 @@
 
 <script>
 import ToggleButtonRenderer from './components/ToggleButtonRenderer.vue';
+import TailwindToggler from '@/components/TailwindToggler.vue'
 import { defineComponent } from "vue";
 import { JsonForms } from "@jsonforms/vue"; // import JsonForms component
 import {
   vanillaRenderers, // default renderers
 } from "@jsonforms/vue-vanilla";
 import { rankWith, isControl } from "@jsonforms/core"
+import './style.css'
 
 const renderers = [
   ...vanillaRenderers,
   {
-    renderer: ToggleButtonRenderer,
+    renderer: TailwindToggler,
     tester: rankWith(1, isControl),
   }
 ]
@@ -47,7 +49,8 @@ export default defineComponent({
   name: "App",
   components: {
     JsonForms,
-    ToggleButtonRenderer
+  //  ToggleButtonRenderer,
+    TailwindToggler
   },
   data() {
     return { // declare variables

@@ -56,7 +56,7 @@
                                 "type": "boolean",
                                 "renderers": [
                                 {
-                                    "renderer": "ToggleButtonRenderer",
+                                    "renderer": "TailwindToggler",
                                     "id": "myToggle",
                                     "label": "Toggle Label"
                                 }
@@ -143,11 +143,31 @@
                     "elements": [
                         {
                             "type": "Control",
-                            "scope": "#/properties/DEFAULT_COMMINV_WEIGHT"
+                            "scope": "#/properties/toggleProperty",
+                            "options": {
+                                "type": "boolean",
+                                "renderers": [
+                                {
+                                    "renderer": "TailwindToggler",
+                                    "id": "myToggle",
+                                    "label": "Toggle Label"
+                                }
+                                ]
+                            }
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/COMMINV_USE_INTERNAL_PRICE"
+                            "scope": "#/properties/toggleProperty",
+                            "options": {
+                                "type": "boolean",
+                                "renderers": [
+                                {
+                                    "renderer": "TailwindToggler",
+                                    "id": "myToggle",
+                                    "label": "Toggle Label"
+                                }
+                                ]
+                            }
                         }
                     ]
                 }
@@ -163,11 +183,31 @@
                     "elements": [
                         {
                             "type": "Control",
-                            "scope": "#/properties/DISABLE_LQ_LABEL_OUTBOUND"
+                            "scope": "#/properties/toggleProperty",
+                            "options": {
+                                "type": "boolean",
+                                "renderers": [
+                                {
+                                    "renderer": "TailwindToggler",
+                                    "id": "myToggle",
+                                    "label": "Toggle Label"
+                                }
+                                ]
+                            }
                         },
                         {
                             "type": "Control",
-                            "scope": "#/properties/DISABLE_LQ_LABEL_SERVICEPOINT"
+                            "scope": "#/properties/toggleProperty",
+                            "options": {
+                                "type": "boolean",
+                                "renderers": [
+                                {
+                                    "renderer": "TailwindToggler",
+                                    "id": "myToggle",
+                                    "label": "Toggle Label"
+                                }
+                                ]
+                            }
                         }
                     ]
                 }
