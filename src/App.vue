@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import ToggleButtonRenderer from './components/ToggleButtonRenderer.vue';
+// import ToggleButtonRenderer from './components/ToggleButtonRenderer.vue';
 import TailwindToggler from '@/components/TailwindToggler.vue'
 import { defineComponent } from "vue";
 import { JsonForms } from "@jsonforms/vue"; // import JsonForms component

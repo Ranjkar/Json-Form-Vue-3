@@ -69,13 +69,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .myform {
   max-width: 800px;
   margin: auto;
+  border: 1px;
 }
 .wrapper {
   padding: 2px;
 }
 
 .SubmitBtn {
-  background-color: #f1ad00;
+  background-color: #f1ad00 !important;
   color: #343b6c;
   padding: 10px 15px;
   margin: 8px 0;
@@ -89,6 +90,6 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .SubmitBtn:hover {
-  background-color: #343b6c;
+  background-color: #343b6c !important;
   color: #f1ad00;
 }
